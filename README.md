@@ -1,2 +1,4 @@
-# concat-images
-Web app to concatenate images
+
+# Image stacker
+
+Stack/concatenate images using this web app.
