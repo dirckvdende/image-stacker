@@ -18,26 +18,33 @@
             <div id="image-select" class="image-select"></div><button class="add-image-button" id="add-image-button"><span class="material-symbols-outlined">add</span></button>
         </div>
         <div class="options-select">
-            <label for="format-select">Output format</label>
-            <select id="format-select">
-                <option value="auto" selected>Auto</option>
-                <option value="image/png">PNG</option>
-                <option value="image/jpeg">JPEG</option>
-            </select>
-            <label for="direction-select">Direction</label>
-            <select id="direction-select">
-                <option value="vertical" selected>Vertical</option>
-                <option value="horizontal">Horizontal</option>
-            </select>
-            <label for="scale-select">Scaling</label>
-            <select id="scale-select">
-                <option value="none">None</option>
-                <option value="first" selected>Scale to first</option>
-            </select>
+            <div>
+                <label for="format-select">Output format</label>
+                <select id="format-select">
+                    <option value="auto" selected>Auto</option>
+                    <option value="image/png">PNG</option>
+                    <option value="image/jpeg">JPEG</option>
+                </select>
+            </div>
+            <div>
+                <label for="direction-select">Direction</label>
+                <select id="direction-select">
+                    <option value="vertical" selected>Vertical</option>
+                    <option value="horizontal">Horizontal</option>
+                </select>
+            </div>
+            <div>
+                <label for="scale-select">Scaling</label>
+                <select id="scale-select">
+                    <option value="none">None</option>
+                    <option value="first" selected>Scale to first</option>
+                </select>
+            </div>
         </div>
         <div class="download-button-container">
             <button id="download-button">Download</button>
         </div>
+        <a href="https://dirckvdende.github.io/" id="credits-link">View more of my projects</a>
     </div>
     <form id="input-form">
         <input type="file" name="image" id="image-input" accept="image/*" multiple>

@@ -24,6 +24,12 @@ body {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 800px) {
+    .container > h1 {
+        font-size: 2em;
+    }
+}
+
 /* IMAGE SELECTION */
 
 .image-select-container {
@@ -108,6 +114,17 @@ button.add-image-button > span {
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .options-select {
+        flex-direction: column;
+    }
+
+    .options-select > div {
+        margin: .3em 0;
+    }
 }
 
 .options-select label {
@@ -127,7 +144,7 @@ button.add-image-button > span {
     user-select: none;
 }
 .options-select select:hover {
-    border-color: black;
+    border-color: #444;
 }
 
 /* DOWNLOAD BUTTON */
@@ -154,4 +171,15 @@ button.add-image-button > span {
 
 #input-form {
     display: none;
+}
+
+#credits-link {
+    color: grey;
+    text-decoration: underline;
+    font-size: .5em;
+    margin-top: 5em;
+    display: block;
+}
+#credits-link:hover {
+    color: #444;
 }
