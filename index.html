@@ -18,16 +18,21 @@
             <div id="image-select" class="image-select"></div><button class="add-image-button" id="add-image-button"><span class="material-symbols-outlined">add</span></button>
         </div>
         <div class="options-select">
-            <label for="format">Output format</label>
-            <select id="Output format">
+            <label for="format-select">Output format</label>
+            <select id="format-select">
                 <option value="auto" selected>Auto</option>
-                <option value="png">PNG</option>
-                <option value="jpeg">JPEG</option>
+                <option value="image/png">PNG</option>
+                <option value="image/jpeg">JPEG</option>
             </select>
-            <label for="direction">Direction</label>
-            <select id="Output format">
+            <label for="direction-select">Direction</label>
+            <select id="direction-select">
                 <option value="vertical" selected>Vertical</option>
                 <option value="horizontal">Horizontal</option>
+            </select>
+            <label for="scale-select">Scaling</label>
+            <select id="scale-select">
+                <option value="none">None</option>
+                <option value="first" selected>Scale to first</option>
             </select>
         </div>
         <div class="download-button-container">

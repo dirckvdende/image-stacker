@@ -88,7 +88,7 @@ button.add-image-button {
     border: 2px dashed grey;
     border-radius: .3em;
     color: grey;
-    margin: 0 .3em;
+    margin: .2em .3em;
     cursor: pointer;
     user-select: none;
     font-size: 1em;
@@ -96,6 +96,10 @@ button.add-image-button {
 button.add-image-button:hover {
     color: #555;
     border-color: #555;
+}
+
+button.add-image-button > span {
+    font-size: 1.3em;
 }
 
 /* OPTIONS */
@@ -113,12 +117,17 @@ button.add-image-button:hover {
 
 .options-select select {
     margin: 0 1.5em 0 .5em;
-    font-size: .9em;
+    font-size: .8em;
     border-radius: .3em;
     background-color: white;
     border: 2px solid grey;
     box-sizing: border-box;
-    padding: .3em 1em;
+    padding: .5em 1em;
+    font-family: inherit;
+    user-select: none;
+}
+.options-select select:hover {
+    border-color: black;
 }
 
 /* DOWNLOAD BUTTON */
