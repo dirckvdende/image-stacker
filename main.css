@@ -1,0 +1,148 @@
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 90svh;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5em 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TITLE */
+
+.container > h1 {
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+/* IMAGE SELECTION */
+
+.image-select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.image-select {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: right;
+    margin-right: .4em;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.image-preview {
+    height: 6em;
+    box-sizing: border-box;
+    border-radius: .3em;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: .2em;
+    position: relative;
+}
+
+.image-preview img {
+    height: 100%;
+    min-width: 3em;
+}
+
+.image-preview .close-button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    background-color: #c95c47;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.image-preview .close-button:hover {
+    background-color: #ad4f3d;
+}
+.image-preview .close-button > span {
+    font-size: .7em;
+}
+
+button.add-image-button {
+    aspect-ratio: 4 / 3;
+    height: 6em;
+    box-sizing: border-box;
+    border: 2px dashed grey;
+    border-radius: .3em;
+    color: grey;
+    margin: 0 .3em;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1em;
+}
+button.add-image-button:hover {
+    color: #555;
+    border-color: #555;
+}
+
+/* OPTIONS */
+
+.options-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options-select label {
+    font-size: .8em;
+    color: #444;
+}
+
+.options-select select {
+    margin: 0 1.5em 0 .5em;
+    font-size: .9em;
+    border-radius: .3em;
+    background-color: white;
+    border: 2px solid grey;
+    box-sizing: border-box;
+    padding: .3em 1em;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-button-container {
+    margin-top: 1em;
+}
+
+.download-button-container > button {
+    background-color: #4bad68;
+    border-radius: .3em;
+    color: white;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: .5em 1.2em;
+    font-family: inherit;
+    cursor: pointer;
+}
+.download-button-container > button:hover {
+    background-color: #3b8250;
+}
+
+#input-form {
+    display: none;
+}
